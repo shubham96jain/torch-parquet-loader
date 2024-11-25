@@ -22,9 +22,9 @@ pip install -r requirements.txt
 3. Use the code directly from the src directory or run the tests using the commands in the section - Testing.
 
 ## Testing
-Run tests with:
+### Run tests with:
 
-# Run all tests, but use only 10K parameter for test_larger_than_memory_handling
+To run all tests quickly with 10K rows, use the following command:
 ```bash
 pytest tests/test_parquet_dataset.py -v -s -k "not test_larger_than_memory_handling or 10K"
 ```
